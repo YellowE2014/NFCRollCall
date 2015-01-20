@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TableRow android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/course_name"
+                android:textSize="20.0sp" />
+
+            <EditText
+                android:id="@+id/etCourseName"
+                android:layout_width="150.0dip"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_course_name"
+                android:singleLine="true" />
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="30.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/course_address"
+                android:textSize="20.0sp" />
+
+            <EditText
+                android:id="@+id/etClassroom"
+                android:layout_width="150.0dip"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_course_address"
+                android:singleLine="true" />
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/course_week"
+                android:textSize="20.0sp" />
+
+            <EditText
+                android:id="@+id/etWeeks"
+                android:layout_width="150.0dip"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_course_week"
+                android:singleLine="true" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/edit_shedule_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/general_back" />
+
+        <Button
+            android:id="@+id/edit_shedule_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/general_confirm" />
+    </LinearLayout>
+
+</LinearLayout>

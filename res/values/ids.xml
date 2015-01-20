@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="lstv_item_main_course_list_rlyt">false</item>
+    <item type="id" name="lstv_item_main_course_not_curWeek">false</item>
+    <item type="id" name="lstv_item_main_course_list_rlyt_content">false</item>
+    <item type="id" name="lstv_item_main_course_txt_courseNum">false</item>
+    <item type="id" name="lstv_item_main_course_rlyt_right">false</item>
+    <item type="id" name="lstv_item_main_course_list_llyt_content">false</item>
+    <item type="id" name="lstv_item_main_course_txv_course_auto">false</item>
+    <item type="id" name="lstv_item_main_course_courseName">false</item>
+    <item type="id" name="lstv_item_main_course_classroom_icon">false</item>
+    <item type="id" name="lstv_item_main_course_classroom">false</item>
+    <item type="id" name="lstv_item_main_course_week_icon">false</item>
+    <item type="id" name="lstv_item_main_course_week">false</item>
+    <item type="id" name="lstv_item_main_course_moreCourse_btn">false</item>
+    <item type="id" name="lstv_item_main_course_courseTime">false</item>
+    
+    <item type="id" name="main_course_rlly_table">false</item>
+    <item type="id" name="main_course_imgv_table_cursor">false</item>
+    <item type="id" name="main_course_txv_monday">false</item>
+    <item type="id" name="main_course_txv_tuesday">false</item>
+    <item type="id" name="main_course_txv_wednesday">false</item>
+    <item type="id" name="main_course_txv_thursday">false</item>
+    <item type="id" name="main_course_txv_friday">false</item>
+    <item type="id" name="main_course_txv_saturday">false</item>
+    <item type="id" name="main_course_txv_sunday">false</item>
+    
+    <item type="id" name="main_course_vpgr_table_view">false</item>
+    
+    <item type="id" name="rlyt_title_menu">false</item>
+    <item type="id" name="title_imgbtn_left">false</item>
+    <item type="id" name="title_txv_left_text">false</item>
+    <item type="id" name="title_txv_menu_tip">false</item>
+    <item type="id" name="title_imgbtn_right">false</item>
+    <item type="id" name="title_imgv_right_icon">false</item>
+    <item type="id" name="title_txv_right_text">false</item>
+    <item type="id" name="title_txv_right_tip">false</item>
+    <item type="id" name="title_imgv_right_tip">false</item>
+    <item type="id" name="title_txv_title">false</item>
+    <item type="id" name="title_txv_title_little">false</item>
+    <item type="id" name="title_llyt_title">false</item>
+</resources>

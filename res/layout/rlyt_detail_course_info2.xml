@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_course_rlyt_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/detail_course_bg" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9.0dip"
+        android:layout_marginRight="9.0dip"
+        android:layout_marginTop="10.0dip"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/detail_course_info_llyt_body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_app_recommend_detail_bg"
+            android:orientation="vertical"
+            android:paddingRight="5.0dip" >
+
+            <LinearLayout
+                style="@style/detail_course_item_layout"
+                android:layout_marginTop="28.0dip" >
+
+                <TextView
+                    style="@style/detail_course_left_text"
+                    android:drawableLeft="@drawable/ic_course_tearch_name"
+                    android:text="@string/course_info_id" />
+
+                <TextView
+                    android:id="@+id/course_info_txv_courseID"
+                    style="@style/detail_course_right_text"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/detail_course_item_layout" >
+
+                <TextView
+                    style="@style/detail_course_left_text"
+                    android:drawableLeft="@drawable/ic_course_course_name"
+                    android:text="@string/course_info_course_name" />
+
+                <TextView
+                    android:id="@+id/course_info_txv_courseName"
+                    style="@style/detail_course_right_text"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/detail_course_item_layout" >
+
+                <TextView
+                    style="@style/detail_course_left_text"
+                    android:drawableLeft="@drawable/ic_course_classroom_icon"
+                    android:text="@string/course_info_classroom" />
+
+                <TextView
+                    android:id="@+id/course_info_txv_classroom"
+                    style="@style/detail_course_right_text"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/detail_course_item_layout" >
+
+                <TextView
+                    style="@style/detail_course_left_text"
+                    android:drawableLeft="@drawable/ic_course_week_icon"
+                    android:text="@string/course_info_weeks" />
+
+                <TextView
+                    android:id="@+id/course_info_txv_week"
+                    style="@style/detail_course_right_text"
+                    android:text="" />
+
+                <ImageButton
+                    android:id="@+id/course_info_imgvbtn_attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8.0dip"
+                    android:background="@color/lucency_black"
+                    android:src="@drawable/btn_attention_selector"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28.0dip"
+                android:src="@drawable/ic_course_dashed" />
+
+            <LinearLayout
+                style="@style/detail_course_item_layout"
+                android:layout_height="54.0dip"
+                android:layout_marginTop="0.0dip" >
+
+                <TextView
+                    style="@style/detail_course_left_text"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_course_classmate"
+                    android:text="@string/course_info_classmate" />
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="12.0dip"
+                        android:layout_marginRight="12.0dip" >
+
+                        <Button
+                            android:id="@+id/course_info_btn_classmate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="44.0dip"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/btn_course_selector"
+                            android:drawableRight="@drawable/ic_course_more_classmates"
+                            android:gravity="center"
+                            android:maxWidth="100.0dip"
+                            android:minWidth="70.0dip"
+                            android:paddingLeft="0.0dip"
+                            android:paddingRight="8.0dip"
+                            android:singleLine="true"
+                            android:textColor="@color/grey"
+                            android:textSize="12.0sp" />
+
+                        <ProgressBar
+                            android:id="@+id/course_info_classmates_progress"
+                            android:layout_width="24.0dip"
+                            android:layout_height="24.0dip"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="12.0dip"
+                            android:indeterminateDrawable="@drawable/progress_drawable"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/course_info_classmates_loadfail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="12.0dip"
+                            android:src="@drawable/ic_course_classmate_loadfail"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_course_dashed" />
+
+            <LinearLayout
+                style="@style/detail_course_item_layout"
+                android:layout_height="54.0dip"
+                android:layout_marginTop="0.0dip" >
+
+                <TextView
+                    style="@style/detail_course_left_text"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_course_evaluate"
+                    android:text="@string/course_info_rollcall" />
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="12.0dip"
+                        android:layout_marginRight="12.0dip" >
+
+                        <Button
+                            android:id="@+id/course_info_btn_begin_roll_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="44.0dip"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="36.0dip"
+                            android:background="@drawable/btn_course_selector"
+                            android:gravity="center"
+                            android:paddingLeft="12.0dip"
+                            android:text="@string/course_info_begin_rollcall"
+                            android:textColor="@color/grey"
+                            android:textSize="14.0sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_course_dashed" />
+
+            <LinearLayout
+                style="@style/detail_course_item_layout"
+                android:layout_height="54.0dip"
+                android:layout_marginTop="0.0dip" >
+
+                <TextView
+                    style="@style/detail_course_left_text"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_course_course_name"
+                    android:text="@string/course_info_rollcall_schedule" />
+
+                <Button
+                    android:id="@+id/course_info_btn_produce"
+                    android:layout_width="0.0dip"
+                    android:layout_height="44.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="36.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_course_selector"
+                    android:gravity="center"
+                    android:paddingLeft="12.0dip"
+                    android:text="@string/course_info_produce"
+                    android:textColor="@color/grey"
+                    android:textSize="14.0sp" />
+
+                <Button
+                    android:id="@+id/course_info_btn_open"
+                    android:layout_width="0.0dip"
+                    android:layout_height="44.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_course_selector"
+                    android:gravity="center"
+                    android:paddingLeft="12.0dip"
+                    android:text="@string/course_info_open"
+                    android:textColor="@color/grey"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_course_lstv_background">#fff5f5f5</color>
+    <color name="course_student_lstv_background">#fff5f5f5</color>
+    <color name="lucency_black">#00000000</color>
+    <color name="main_course_not_curweek_bg">#ffededed</color>
+    <color name="main_course_listview_item_courseNum_txt">#ffef760b</color>
+    <color name="grey">#ff666666</color>
+    <color name="main_course_listview_item_txt_pressed">#ffffffff</color>
+    <color name="main_course_listview_item_course_txt">#ff0a9b0a</color>
+    <color name="lucency_white">#00ffffff</color>
+    <color name="main_course_rlly_table_txt">#ff2e94da</color>
+    <color name="main_course">#ffffffff</color>
+    <color name="title_btn_text_shadow">#ff000000</color>
+    <color name="title_btn_text">#ffffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="background">#fff5f5f5</color>
+    <color name="detail_course_bg">#fff5f5f5</color>
+	<color name="detail_course_no_content">#fff17f1a</color>
+	<color name="deep_grey">#ff333333</color>
+	<color name="lightest_grey">#ff999999</color>
+	<color name="list_tab">#ff666666</color>
+	<color name="hint">#ff999999</color>
+	<color name="dlg_title">#ff666666</color>
+	<color name="dlg_button_text">#ff666666</color>
+</resources>

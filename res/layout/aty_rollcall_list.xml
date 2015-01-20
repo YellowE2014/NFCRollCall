@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16.0dip"
+    android:paddingLeft="16.0dip"
+    android:paddingRight="16.0dip" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/roll_call_status"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@drawable/list_item_top_selector" >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/user_edit_data_left_text"
+                android:text="状态" />
+
+            <Button
+                android:id="@+id/roll_call_status_btn_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_toLeftOf="@+id/roll_call_status_btn_late"
+                android:background="@drawable/btn_gender_boy_selector"
+                android:paddingLeft="18.0dip"
+                android:paddingRight="18.0dip"
+                android:text="正常"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/roll_call_status_btn_late"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/roll_call_status_btn_normal"
+                android:layout_alignBottom="@+id/roll_call_status_btn_normal"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_gender_girl_selector"
+                android:paddingLeft="18.0dip"
+                android:paddingRight="18.0dip"
+                android:text="迟到"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/roll_call_times"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@drawable/list_item_bottom_selector"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/user_edit_data_left_text"
+                android:text="点名次数" />
+
+            <ImageView
+                android:id="@+id/roll_call_status_week_imgv_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/ic_item_enter" />
+
+            <TextView
+                android:id="@+id/roll_call_times_txv_text"
+                style="@style/user_edit_data_edit_text"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_toLeftOf="@+id/roll_call_status_week_imgv_enter"
+                android:hint="第1次"
+                android:singleLine="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <TextView
+            style="@style/user_data_tab_text"
+            android:paddingTop="4.0dip"
+            android:text="点名列表" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_app_recommend_detail_bg" >
+    </ListView>
+<!-- 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/roll_call_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_dlg_grey_selector"
+            android:text="@string/roll_call_list_cancel" />
+
+        <Button
+            android:id="@+id/roll_call_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_dlg_blue_selector"
+            android:text="@string/roll_call_list_confirm" />
+    </LinearLayout>
+ -->
+</LinearLayout>

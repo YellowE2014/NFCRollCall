@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mySpinner="http://schemas.android.com/apk/res/com.xtuone.android.syllabus"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_course_lstv_background"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:id="@id/lstv_item_main_course_list_rlyt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lstv_item_selector" >
+
+        <ImageView
+            android:id="@id/lstv_item_main_course_not_curWeek"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lstv_item_main_course_list_rlyt_content"
+            android:layout_alignTop="@id/lstv_item_main_course_list_rlyt_content"
+            android:background="@color/main_course_not_curweek_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/lstv_item_main_course_txt_courseNum"
+            android:layout_width="54.0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="11-12"
+            android:textColor="@color/main_course_listview_item_courseNum_txt"
+            android:textSize="16.0sp"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:id="@id/lstv_item_main_course_list_rlyt_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/lstv_item_main_course_rlyt_right"
+            android:layout_toRightOf="@id/lstv_item_main_course_txt_courseNum"
+            android:minHeight="64.0dip" >
+
+            <LinearLayout
+                android:id="@id/lstv_item_main_course_list_llyt_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:paddingBottom="8.0dip"
+                android:paddingTop="8.0dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@id/lstv_item_main_course_txv_course_auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="4.0dip"
+                        android:background="@color/lucency_black"
+                        android:src="@drawable/ic_educationalsystem_icon"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@id/lstv_item_main_course_courseName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="大学英语"
+                        android:textColor="@drawable/main_course_item_course_name_selector"
+                        android:textSize="16.0sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@id/lstv_item_main_course_classroom_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_course_classroom_icon"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@id/lstv_item_main_course_classroom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dip"
+                        android:singleLine="true"
+                        android:textColor="@color/grey"
+                        android:textSize="12.0sp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@id/lstv_item_main_course_week_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_course_week_icon"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@id/lstv_item_main_course_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dip"
+                        android:singleLine="true"
+                        android:textColor="@color/grey"
+                        android:textSize="12.0sp"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/lstv_item_main_course_rlyt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lstv_item_main_course_list_rlyt_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/lstv_item_main_course_list_rlyt_content"
+            android:layout_marginRight="16.0dip"
+            android:paddingLeft="4.0dip"
+            android:paddingRight="4.0dip"
+            android:paddingTop="8.0dip" >
+
+            <TextView
+                android:id="@id/lstv_item_main_course_courseTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="08:00~09:00"
+                android:textColor="@color/grey"
+                android:textSize="12.0sp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

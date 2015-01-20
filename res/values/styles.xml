@@ -1,0 +1,74 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="wrap_parent_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="detail_course_item_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">19.0dip</item>
+    </style>
+    <style name="detail_course_left_text" parent="@style/wrap_parent_style">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:drawablePadding">10.0dip</item>
+    </style>
+    <style name="detail_course_right_text">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/deep_grey</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">36.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="user_data_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="user_edit_data_left_text" parent="@style/user_data_wrap">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/deep_grey</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="user_data_tab_text" parent="@style/user_data_wrap">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/list_tab</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+    </style>
+    <style name="user_edit_data_edit_text" parent="@style/user_data_wrap">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textColorHint">@color/hint</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@color/lucency_black</item>
+        <item name="android:layout_marginLeft">100.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    
+   
+
+</resources>

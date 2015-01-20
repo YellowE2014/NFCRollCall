@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NFCRollCall</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="main_course_monday">一</string>
+    <string name="main_course_tuesday">二</string>
+    <string name="main_course_wednesday">三</string>
+    <string name="main_course_thursday">四</string>
+    <string name="main_course_friday">五</string>
+    <string name="main_course_Saturday">六</string>
+    <string name="main_course_Sunday">日</string>
+    
+    <string name="app_name_en">Friday</string>
+    
+    <string name="general_cancel">取消</string>
+    <string name="general_back">返回</string>
+    <string name="general_exit">退出</string>
+    <string name="general_confirm">确定</string>
+    <string name="general_cancle">取消</string>
+    
+    <string name="edit_title">课程信息</string>
+    
+    <string name="course_name">课程名称：</string>
+    <string name="course_address">教室地点：</string>
+    <string name="course_teacher">老师姓名：</string>
+    <string name="course_amount">上课节数：</string>
+    <string name="course_week">上课周数：</string>
+    <string name="course_time">上课时间：</string>
+    <string name="course_delete_course">删除课程</string>
+    
+    <string name="input_course_name">请输入课程名称</string>
+    <string name="input_course_address">请输入教室地点</string>
+    <string name="input_course_teacher">请输入老师姓名</string>
+    <string name="input_course_week">1-16周</string>
+    
+    
+    <string name="add_course">添加课程</string>
+    
+    <string name="course_name_cannot_be_empty">课程名不能为空</string>
+    
+    <string name="course_info_time">时间</string>
+    <string name="course_info_weeks">周数</string>
+    <string name="course_info_classroom">教室</string>
+    <string name="course_info_teacher">老师</string>
+    <string name="course_info_course_name">名称</string>
+    <string name="course_info_classmate">同学</string>
+    <string name="course_info_rollcall_schedule">点名表</string>
+    <string name="course_info_rollcall">点名</string>
+    <string name="course_info_id">课号</string>
+    <string name="course_info_begin_rollcall">开始点名</string>
+    <string name="course_info_produce">生成</string>
+    <string name="course_info_open">查看</string>
+    
+
+    <string name="roll_call_list_confirm">完成点名</string>
+    <string name="roll_call_list_cancel">取消</string>
+    <string name="default_student_name">黄宇</string>
+    <string name="default_student_number">3111005877</string>
+    <string name="default_rollcall_status">签到</string>
+    
+    <string name="student_edit_delete_student">从本课程中删除该学生</string>
+    
+</resources>

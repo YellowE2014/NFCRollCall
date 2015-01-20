@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black" >
+
+
+    <RelativeLayout
+        android:id="@+id/detail_course_rlyt_body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/background" />
+
+        <RelativeLayout
+            android:id="@+id/detail_course_rlyt_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <include
+                android:id="@+id/detail_course_info"
+                layout="@layout/rlyt_detail_course_info2" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+            android:id="@+id/edit_course_rlyt_delete_course"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16.0dip"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:background="@drawable/btn_red_selector"
+            android:clickable="true"
+            android:minHeight="48.0dip" >
+
+            <TextView
+                android:id="@+id/setting_txv_logout_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/course_delete_course"
+                android:textColor="@color/white"
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+
+</RelativeLayout>

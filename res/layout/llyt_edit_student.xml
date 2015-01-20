@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/add_student_data_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16.0dip" >
+
+        <TextView
+            style="@style/user_data_tab_text"
+            android:paddingTop="4.0dip"
+            android:text="基本信息" />
+
+        <RelativeLayout
+            android:id="@+id/add_student_data_rlyt_name"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@drawable/list_item_top_selector" >
+
+            <TextView
+                style="@style/user_edit_data_left_text"
+                android:text="姓名" />
+
+            <EditText
+                android:id="@+id/add_student_data_txv_name"
+                style="@style/user_edit_data_edit_text"
+                android:hint="请输入姓名"
+                android:imeOptions="actionNext"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_student_data_rlyt_stuNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@drawable/list_item_middle_selector" >
+
+            <TextView
+                style="@style/user_edit_data_left_text"
+                android:text="学号" />
+
+            <EditText
+                android:id="@+id/add_student_data_txv_stuNumber"
+                style="@style/user_edit_data_edit_text"
+                android:hint="请输入学号"
+                android:imeOptions="actionNext"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_edit_data_rlyt_gender"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@drawable/list_item_middle_selector" >
+
+            <TextView
+                style="@style/user_edit_data_left_text"
+                android:text="性别" />
+
+            <Button
+                android:id="@+id/roll_call_status_btn_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100.0dip"
+                android:background="@drawable/btn_gender_boy_selector"
+                android:paddingLeft="18.0dip"
+                android:paddingRight="18.0dip"
+                android:text="男"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/roll_call_status_btn_late"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/roll_call_status_btn_normal"
+                android:background="@drawable/btn_gender_girl_selector"
+                android:paddingLeft="18.0dip"
+                android:paddingRight="18.0dip"
+                android:text="女"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_student_data_rlyt_class"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_middle_selector"
+            android:minHeight="48.0dip" >
+
+            <TextView
+                style="@style/user_edit_data_left_text"
+                android:text="班级" />
+
+            <EditText
+                android:id="@+id/add_student_data_txv_class"
+                style="@style/user_edit_data_edit_text"
+                android:hint="请输班级"
+                android:imeOptions="actionNext" 
+                android:singleLine="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_student_data_rlyt_cardNum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_bottom_selector"
+            android:minHeight="48.0dip" >
+
+            <TextView
+                style="@style/user_edit_data_left_text"
+                android:text="一卡通号" />
+
+            <EditText
+                android:id="@+id/add_student_data_txv_cardNum"
+                style="@style/user_edit_data_edit_text"
+                android:hint="请刷卡"
+                android:imeOptions="actionNext" 
+                android:singleLine="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
